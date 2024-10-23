@@ -1,0 +1,16 @@
+{
+	"name": "2.-newsletter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build-scss": "sass src/scss/main.scss:css/main.css --no-source-map",
+		"watch-scss": "sass --watch src/scss/main.scss:css/main.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"sass": "^1.80.3"
+	}
+}

@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #242742;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #242742;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 30rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.newsletter__img {
+  background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 280px;
+  max-height: 300px;
+  height: auto;
+  aspect-ratio: 2/1;
+}
+.newsletter__info {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.newsletter__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.newsletter__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.newsletter__item {
+  position: relative;
+  list-style-type: none;
+}
+.newsletter__item::before {
+  position: absolute;
+  content: url("/assets/images/icon-list.svg");
+  left: -35px;
+  top: 0.2em;
+  width: 1.3125rem;
+  height: 1.3125rem;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  padding-bottom: 2.5rem;
+}
+.newsletter__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.newsletter__input {
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #242742;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.875rem 2.5rem;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as var;
+
+.button {
+	background-color: var.$color-dark-navy;
+	color: var.$color-white;
+	font-size: var.$fs-medium;
+	font-weight: var.$fw-bolder;
+
+	padding: 0.875rem 2.5rem;
+	border-radius: 8px;
+}
