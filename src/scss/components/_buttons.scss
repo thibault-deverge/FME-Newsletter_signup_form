@@ -7,5 +7,16 @@
 	font-weight: var.$fw-bolder;
 
 	padding: 0.875rem 2.5rem;
+	border: none;
 	border-radius: 8px;
+
+	&:hover {
+		background: linear-gradient(
+			to bottom left,
+			var.$color-gradient-1,
+			var.$color-gradient-2
+		);
+		box-shadow: var.$drop-shadow-3;
+		cursor: pointer;
+	}
 }

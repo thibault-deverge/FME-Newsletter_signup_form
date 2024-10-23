@@ -25,11 +25,14 @@ body {
 
 	min-height: 100vh;
 	background-color: var.$color-dark-navy;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 main {
-	min-height: 100vh;
-	max-width: 30rem;
+	max-width: 100%;
 	margin: 0 auto;
 	background-color: var.$color-white;
 }
