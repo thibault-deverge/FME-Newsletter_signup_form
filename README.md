@@ -4,9 +4,10 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [solution URL](https://www.frontendmentor.io/solutions/newsletter-signup-form---solution-g95mf5PpLY)
+- [live site URL](https://frontend-mentor-newsletter-signup-form-ten.vercel.app/)
 
 ## Author
 
 - Frontend Mentor - [@thibault-deverge](https://www.frontendmentor.io/profile/thibault-deverge)
+  i
