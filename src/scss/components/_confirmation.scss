@@ -3,19 +3,19 @@
 .confirmation {
 	background-color: var.$color-white;
 	min-height: 100vh;
-	padding: 2.5rem 1.5rem;
+	padding: var.$spacing-xl var.$spacing-medium;
 
 	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
-	gap: 1.5rem;
+	gap: var.$spacing-medium;
 
 	@media screen and (min-width: var.$bp-tablet) {
-		max-width: 500px;
+		max-width: var.$width-confirmation-small;
 		min-height: 0;
-		max-height: 500px;
-		padding: 64px;
+		max-height: var.$width-confirmation-small;
+		padding: var.$spacing-xxl;
 		border-radius: 36px;
 	}
 
@@ -24,8 +24,8 @@
 	}
 
 	&__icon {
-		margin-top: 150px;
-		margin-bottom: 1rem;
+		margin-top: 9.375rem;
+		margin-bottom: var.$spacing-small;
 
 		@media screen and (min-width: var.$bp-tablet) {
 			margin-top: 0;
@@ -33,7 +33,7 @@
 	}
 
 	&__title {
-		font-size: 2.5rem;
+		font-size: var.$fs-large;
 		line-height: 1;
 	}
 

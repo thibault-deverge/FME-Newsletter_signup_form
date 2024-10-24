@@ -4,17 +4,17 @@
 	background-color: var.$color-white;
 	display: none;
 	flex-direction: column;
-	gap: 2.5rem;
+	gap: var.$spacing-xl;
 
 	@media screen and (min-width: var.$bp-desktop) {
 		width: 100%;
-		padding: 1.5rem;
+		padding: var.$spacing-medium;
 		border-radius: 36px;
 
 		flex-direction: row;
 		justify-content: end;
 		align-items: center;
-		gap: 64px;
+		gap: var.$spacing-xxl;
 	}
 
 	&--active {
@@ -28,8 +28,8 @@
 		background-position: center;
 
 		width: 100%;
-		min-height: 280px;
-		max-height: 300px;
+		min-height: 17.5rem;
+		max-height: 18.75rem;
 		height: auto;
 		aspect-ratio: 2 / 1;
 
@@ -39,7 +39,7 @@
 			order: 1;
 
 			background-image: url("/assets/images/illustration-sign-up-desktop.svg");
-			min-height: 600px;
+			min-height: 37.5rem;
 			aspect-ratio: 1 / 2;
 			border-radius: 16px;
 		}
@@ -48,20 +48,20 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
-		gap: 2.5rem;
+		gap: var.$spacing-xl;
 
 		@media screen and (min-width: var.$bp-desktop) {
 			width: 42.5%;
-			margin-left: 2.5rem;
+			margin-left: var.$spacing-xl;
 		}
 	}
 
 	&__info {
-		padding: 0 1.5rem;
+		padding: 0 var.$spacing-medium;
 
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: var.$spacing-medium;
 
 		@media screen and (min-width: var.$bp-desktop) {
 			padding: 0;
@@ -72,6 +72,10 @@
 		font-size: var.$fs-large;
 		font-weight: var.$fw-bolder;
 		line-height: 1;
+
+		@media screen and (min-width: var.$bp-desktop) {
+			font-size: var.$fs-extra-large;
+		}
 	}
 
 	&__list {
@@ -97,8 +101,8 @@
 	&__form {
 		display: flex;
 		flex-direction: column;
-		padding: 0 1.5rem;
-		padding-bottom: 2.5rem;
+		padding: 0 var.$spacing-medium;
+		padding-bottom: var.$spacing-medium;
 
 		@media screen and (min-width: var.$bp-desktop) {
 			padding: 0;
@@ -120,10 +124,10 @@
 	}
 
 	&__input {
-		padding: 1rem 1.5rem;
+		padding: var.$spacing-small var.$spacing-medium;
 		border: 1px solid var.$color-gray-25;
 		border-radius: 8px;
-		margin-bottom: 1.5rem;
+		margin-bottom: var.$spacing-medium;
 
 		&--error {
 			color: var.$color-vermellion;

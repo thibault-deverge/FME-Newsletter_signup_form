@@ -36,8 +36,8 @@ main {
 	margin: 0 auto;
 
 	@media screen and (min-width: var.$bp-desktop) {
-		min-width: max(65%, 928px);
-		max-width: 1250px;
+		min-width: max(65%, 58rem);
+		max-width: 78.125rem;
 
 		display: flex;
 		justify-content: center;
