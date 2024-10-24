@@ -14,3 +14,32 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Environment variables
+.env
+
+# Optional: Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Optional: OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: IDE/editor settings
+.idea/
+.vscode/
+*.swp
+
+# Build directories (for compiled assets like CSS/JS)
+dist/
+build/
