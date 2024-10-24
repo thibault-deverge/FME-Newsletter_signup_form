@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<main>
-			<section class="newsletter newsletter--active" aria-labelledby="newsletter-title">
+			<section class="newsletter newsletter--active">
 				<div class="newsletter__img"></div>
 
 				<div class="newsletter__container">
@@ -33,12 +33,7 @@
 						</ul>
 					</div>
 
-					<form
-						id="form"
-						class="newsletter__form"
-						aria-labelledby="email-label"
-						novalidate
-					>
+					<form id="form" class="newsletter__form" novalidate>
 						<div class="newsletter__label-container">
 							<label for="email" class="newsletter__label">Email address</label
 							><span id="error-message" class="newsletter__error"
@@ -52,7 +47,6 @@
 							placeholder="email@company.com"
 							class="newsletter__input"
 							aria-required="true"
-							aria-describedby="email-hint"
 						/>
 						<button type="submit" class="button">Subscribe to monthly newsletter</button>
 					</form>
