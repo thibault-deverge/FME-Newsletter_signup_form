@@ -18,30 +18,45 @@
 			<section class="newsletter newsletter--active" aria-labelledby="newsletter-title">
 				<div class="newsletter__img"></div>
 
-				<div class="newsletter__info">
-					<h1 class="newsletter__title">Stay updated!</h1>
-					<p class="newsletter__description">
-						Join 60,000+ product managers receiving monthly updates on:
-					</p>
-					<ul class="newsletter__list">
-						<li class="newsletter__item">Product discovery and building what matters</li>
-						<li class="newsletter__item">Measuring to ensure updates are a success</li>
-						<li class="newsletter__item">And much more!</li>
-					</ul>
+				<div class="newsletter__container">
+					<div class="newsletter__info">
+						<h1 class="newsletter__title">Stay updated!</h1>
+						<p class="newsletter__description">
+							Join 60,000+ product managers receiving monthly updates on:
+						</p>
+						<ul class="newsletter__list">
+							<li class="newsletter__item">
+								Product discovery and building what matters
+							</li>
+							<li class="newsletter__item">Measuring to ensure updates are a success</li>
+							<li class="newsletter__item">And much more!</li>
+						</ul>
+					</div>
+
+					<form
+						id="form"
+						class="newsletter__form"
+						aria-labelledby="email-label"
+						novalidate
+					>
+						<div class="newsletter__label-container">
+							<label for="email" class="newsletter__label">Email address</label
+							><span id="error-message" class="newsletter__error"
+								>Valid email required</span
+							>
+						</div>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="email@company.com"
+							class="newsletter__input"
+							aria-required="true"
+							aria-describedby="email-hint"
+						/>
+						<button type="submit" class="button">Subscribe to monthly newsletter</button>
+					</form>
 				</div>
-				<form class="newsletter__form" aria-labelledby="email-label">
-					<label for="email" class="newsletter__label">Email address</label>
-					<input
-						type="email"
-						id="email"
-						name="email"
-						placeholder="email@company.com"
-						class="newsletter__input"
-						aria-required="true"
-						aria-describedby="email-hint"
-					/>
-					<button type="submit" class="button">Subscribe to monthly newsletter</button>
-				</form>
 			</section>
 
 			<section class="confirmation" aria-labelledby="confirmation-title" hidden>
@@ -58,7 +73,9 @@
 					<span class="confirmation__email"></span>. Please open it and click the button
 					inside to confirm your subscription.
 				</p>
-				<button class="button">Dismiss message</button>
+				<button id="dismiss-button" class="confirmation__button button">
+					Dismiss message
+				</button>
 			</section>
 		</main>
 	</body>

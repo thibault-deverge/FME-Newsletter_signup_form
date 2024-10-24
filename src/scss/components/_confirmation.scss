@@ -1,15 +1,52 @@
 @use "../abstracts/variables" as var;
 
 .confirmation {
+	background-color: var.$color-white;
+	min-height: 100vh;
+	padding: 2.5rem 1.5rem;
+
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 1.5rem;
+
+	@media screen and (min-width: var.$bp-tablet) {
+		max-width: 500px;
+		min-height: 0;
+		max-height: 500px;
+		padding: 64px;
+		border-radius: 36px;
+	}
+
+	&--active {
+		display: flex;
+	}
+
 	&__icon {
+		margin-top: 150px;
+		margin-bottom: 1rem;
+
+		@media screen and (min-width: var.$bp-tablet) {
+			margin-top: 0;
+		}
 	}
 
 	&__title {
+		font-size: 2.5rem;
+		line-height: 1;
 	}
 
 	&__message {
+		letter-spacing: 0.5px;
 	}
 
 	&__email {
+		font-weight: var.$fw-bolder;
+	}
+
+	&__button {
+		margin-top: auto;
+		align-self: stretch;
 	}
 }

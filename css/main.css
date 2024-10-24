@@ -74,13 +74,36 @@ body {
 main {
   max-width: 100%;
   margin: 0 auto;
-  background-color: #fff;
+}
+@media screen and (min-width: 62.5rem) {
+  main {
+    min-width: max(65%, 928px);
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .newsletter {
-  display: flex;
+  background-color: #fff;
+  display: none;
   flex-direction: column;
   gap: 2.5rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .newsletter {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 36px;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 64px;
+  }
+}
+.newsletter--active {
+  display: flex;
 }
 .newsletter__img {
   background-image: url("/assets/images/illustration-sign-up-mobile.svg");
@@ -93,11 +116,38 @@ main {
   height: auto;
   aspect-ratio: 2/1;
 }
+@media screen and (min-width: 62.5rem) {
+  .newsletter__img {
+    align-self: stretch;
+    flex: 1;
+    order: 1;
+    background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+    min-height: 600px;
+    aspect-ratio: 1/2;
+    border-radius: 16px;
+  }
+}
+.newsletter__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .newsletter__container {
+    width: 42.5%;
+    margin-left: 2.5rem;
+  }
+}
 .newsletter__info {
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .newsletter__info {
+    padding: 0;
+  }
 }
 .newsletter__title {
   font-size: 2.5rem;
@@ -127,16 +177,78 @@ main {
   padding: 0 1.5rem;
   padding-bottom: 2.5rem;
 }
-.newsletter__label {
+@media screen and (min-width: 62.5rem) {
+  .newsletter__form {
+    padding: 0;
+  }
+}
+.newsletter__label-container {
   font-size: 0.75rem;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
+}
+.newsletter__error {
+  visibility: hidden;
+  color: #ff6155;
 }
 .newsletter__input {
   padding: 1rem 1.5rem;
   border: 1px solid rgba(25, 24, 43, 0.25);
   border-radius: 8px;
   margin-bottom: 1.5rem;
+}
+.newsletter__input--error {
+  color: #ff6155;
+  background-color: rgba(255, 97, 85, 0.15);
+  border: 1px solid #ff6155;
+}
+
+.confirmation {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 2.5rem 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 31.25rem) {
+  .confirmation {
+    max-width: 500px;
+    min-height: 0;
+    max-height: 500px;
+    padding: 64px;
+    border-radius: 36px;
+  }
+}
+.confirmation--active {
+  display: flex;
+}
+.confirmation__icon {
+  margin-top: 150px;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 31.25rem) {
+  .confirmation__icon {
+    margin-top: 0;
+  }
+}
+.confirmation__title {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.confirmation__message {
+  letter-spacing: 0.5px;
+}
+.confirmation__email {
+  font-weight: 700;
+}
+.confirmation__button {
+  margin-top: auto;
+  align-self: stretch;
 }
 
 .button {
